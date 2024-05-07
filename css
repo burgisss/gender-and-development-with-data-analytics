@@ -1,0 +1,1009 @@
+/* Define global font family */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+.header {
+    background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Ensure header stays above other elements */
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.header p {
+    color: white;
+    font-size: small;
+}
+
+/* Navbar styles */
+.navbar {
+    background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+    color: white;
+    opacity: 90%;
+    margin-bottom: 30px;
+    position: sticky; /* Change from relative to sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure navbar stays above other elements */
+    
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-link {
+    position: relative;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+    color: white;
+}
+
+
+/* Navbar Link Hover Effect */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Change Link Hover Color */
+.navbar .nav-link:hover::after {
+    background-color: violet;
+}
+
+/* Navbar Link Active and Focus States */
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+    color: purple; /* Change text color */
+}
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    
+    .navbar {
+        height: 8vh;
+        /* Adjusted height for smaller screens */
+        padding: 0 10px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 0.8rem;
+        /* Decrease font size for smaller screens */
+    }
+
+    .navbar-toggler {
+        font-size: 0.8rem;
+        /* Decrease font size for smaller screens */
+        padding: 0.2rem 0.4rem;
+        /* Adjusted padding for smaller screens */
+        
+        
+    }
+    
+    .header h1 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .header p {
+        font-size: x-small; /* Decrease font size for smaller screens */
+    }
+    /* Hide paragraph inside carousel on smaller screens */
+    .carousel p {
+        display: none;
+    }
+    .carousel h1 {
+        font-size: 15px; /* Decrease font size for smaller screens */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; /* Adjust width as needed */
+        text-align: center;
+    }
+    
+
+    
+}
+    /* Header styles */
+    .header h1 {
+        font-size: 30px;
+        /* Decrease font size */
+        text-align: center;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        padding: 10px;
+        /* Add padding */
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        /* Decrease font size */
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+        /* Decrease font size */
+    }
+
+    .carousel {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    /* Vertically center <h1> within carousel items */
+    .carousel-item {
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+
+.carousel {
+    background-color: rgba(128, 128, 128, 0.151);
+    border-radius: 25px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10vh;
+    width: 80%; /* Set the width to 80% of its container */
+    max-width: 1000px; /* Limit the maximum width of the carousel */
+    position: relative; /* Add relative positioning */
+    z-index: 0; /* Ensure carousel stays behind other elements */
+    overflow: hidden; /* Ensure the carousel content does not overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.carousel-inner {
+    text-align: center;
+    height: 100%; /* Ensure the carousel takes up the full height of its container */
+}
+
+.carousel-item {
+    padding: 20px; /* Adjust padding as needed */
+    height: 250px; /* Set a fixed height for carousel items */
+    justify-content: center;
+}
+
+.carousel h1 {
+    color: purple;
+}
+
+#intro {
+    height: 70vh; /* Set the desired height */
+    width: 100%; /* Set the width to 100% of its container */
+   
+}
+
+#info {
+    height: 95vh;
+    width: 100%;
+    text-align: center;
+    /* Add top margin equal to the height of the navbar */
+    margin-bottom: 50px;
+    padding-top: 10vh;
+    
+}
+
+/* Targeting the h1 inside #info */
+#info h1 {
+    padding-top: 15vh;
+    margin-top: 100px; /* Offset the margin to compensate for the margin-top of #info */
+    color: purple;
+    
+}
+
+
+/* Services Section Styles */
+#services {
+    padding-top: 60px ;
+    
+}
+
+#services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+#services h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: purple; /* Change text color */
+}
+
+.service {
+    margin-bottom: 40px;
+    background-color: #fff; /* Add a white background color */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Change text color */
+}
+
+.service-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666; /* Change text color */
+}
+
+.service p strong {
+    color: violet;
+}
+
+/* Hover effect for services */
+.service:hover {
+    transform: translateY(-5px); /* Add a slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: violet;
+}
+
+
+  .carousel {
+    animation: fadeInUp 3s ease-out; /* Example animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    background-image: linear-gradient(to right, #550055, #bb6b78);
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-link {
+    position: relative;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Navbar Link Hover Effect */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Change Link Hover Color */
+.navbar .nav-link:hover::after {
+    background-color: violet;
+}
+
+
+/* Navbar Link Active and Focus States */
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+    color: purple;
+}
+
+main {
+    min-height: calc(100vh - 10vh);
+    overflow-y: auto;
+    position: relative;
+    padding-top: 0;
+    margin: auto;
+    padding-bottom: 10vh;
+}
+
+/* Gradient Backgrounds with Patterns */
+#home,
+#get-involved,
+#events {
+    background: linear-gradient(to bottom, #f3e5f5, #ffffff);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+/* Image Borders */
+.carousel-item img {
+    max-height: 400px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    /* Adjust border color as needed */
+}
+
+#home h1,
+#get-involved h1,
+#events .eventcaption {
+    color: purple;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 10vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#home p,
+#get-involved p {
+    font-size: 120%;
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+/* Button Styling */
+.button {
+    background: linear-gradient(to right, #550055, #bb6b78);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #bb6b78, #550055);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtle Gradients for Text */
+.gradient-text {
+    background: linear-gradient(to right, #550055, #bb6b78);
+    -webkit-text-fill-color: transparent;
+}
+
+/* Notification Button */
+#notificationButton {
+    background-color: rgba(128, 0, 128, 0.1);
+    border-radius: 20px;
+    color: purple;
+    font-size: small;
+    font-weight: bold;
+    margin: 0 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#notificationButton:hover {
+    color: violet;
+    background-color: rgba(128, 0, 128, 0.2);
+    transform: scale(1.05);
+}
+
+/* Adjust the width of the carousel container */
+.carousel {
+    width: 65%;
+    margin: auto;
+    box-shadow: 0 0 50px grey;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    border-radius: 10px ;
+}
+
+/* Carousel caption styles */
+.carousel-caption {
+    background-color: rgba(119, 105, 119, 0.5);
+    /* Adjusted background color opacity */
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+/* Adjust font size of carousel caption */
+.carousel-caption h5 {
+    font-size: 18px;
+}
+
+.carousel-caption p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 8vh;
+        padding: 0 10px;
+    }
+
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+
+    .navbar-toggler {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    main {
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+
+    #home,
+    #get-involved,
+    #events {
+        padding: 5vh 5vw;
+        margin-bottom: 30px;
+    }
+
+    #home h1,
+    #get-involved h1 {
+        font-size: 24px;
+    }
+
+    #home p,
+    #get-involved p {
+        font-size: 100%;
+    }
+
+    .carousel {
+        width: 80%;
+        margin-top: 2vh;
+    }
+
+    #events .eventcaption {
+        font-size: 30px;
+        margin-left: 1rem;
+    }
+        /* Adjust padding and margin for resources section */
+        #resources {
+            padding: 5px;
+        }
+    
+        /* Decrease font size and margin for resource section headings */
+        #resources h1 {
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+    
+        #resources h2 {
+            font-size: 14px;
+        }
+    
+        /* Decrease padding and font size for card header and body */
+        .card-header {
+            padding: 5px;
+            font-size: 12px;
+        }
+    
+        .card-body {
+            padding: 5px;
+        }
+    
+        /* Decrease font size for card titles and descriptions */
+        .card-title {
+            font-size: 12px;
+        }
+    
+        .card-description {
+            font-size: 10px;
+        }
+    
+        /* Decrease font size for items */
+        .item h5,
+        .item p {
+            font-size: 10px; /* Adjust font size for h5 and p */
+            margin-bottom: 2px;
+        }
+    
+        .item p {
+            font-size: 8px; /* Adjust font size for p */
+        }
+    }
+    
+
+/* Section separators */
+#home,
+#get-involved,
+#events {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hover effect for carousel images */
+.carousel-item img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Typography */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: #550055;
+    color: white;
+}
+
+.button-secondary {
+    background-color: #bb6b78;
+    color: white;
+}
+
+.button-primary,
+.button-secondary {
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    background-color: #6c0073;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Testimonials */
+.testimonial {
+    background: linear-gradient(to bottom, #f3e5f5, #ffffff);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.testimonial h2 {
+    color: purple;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial-slide {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+}
+
+.testimonial-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-slide .testimonial-content {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-slide .testimonial-author {
+    font-style: italic;
+    color: #777;
+}
+
+/* Testimonial Arrows */
+.testimonial-arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial-arrow {
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.testimonial-arrow:hover {
+    color: purple;
+}
+
+/* Margin for each section */
+#home,
+#get-involved,
+#events,
+.testimonial,
+footer {
+    margin-bottom: 30px;
+}
+
+.card {
+    padding-top: px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    box-shadow: 0 0 20px rgba(248, 96, 190, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(238, 130, 238, 0.3);
+}
+
+.card-header {
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(252, 71, 207, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(235, 11, 255, 0.1);
+}
+
+.item h5 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.item p {
+    color: #666;
+    font-size: 13px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+}
+
+#resources {
+    background: linear-gradient(to bottom, #f3e5f5, #ffffff);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+#resources h1 {
+    color: purple;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+#resources h2 {
+    color: purple;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-image: linear-gradient(to right, #550055, #bb6b78);
+    color: white;
+    border: none;
+    opacity: 0.9;
+    
+   
+}
+
+
+.dropdown-menu .dropdown-item {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: violet;
+}
+/* CSS for basic styling, adjust as needed */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+}
+
+.container {
+    max-width: 300px; /* Decreased the max-width of the container */
+    margin: 100px auto; /* Adjusted the margin */
+    backdrop-filter: blur(10px); /* Apply blur effect only to the container */
+    border-radius: 10px; /* Optional: Add rounded corners for a nicer look */
+    padding: 15px; /* Decreased the padding */
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Fallback background color for browsers that don't support backdrop-filter */
+}
+
+.form-container {
+    display: none; /* Hide the form by default */
+}
+
+h2, h1, p {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; /* Added margin-bottom for better spacing */
+}
+
+.btn-primary {
+    background-color: purple; /* Set the background color of the primary buttons to violet */
+    border-color: purple; /* Set the border color of the primary buttons to violet */
+    border-radius: 20px;
+    padding: 8px 15px; /* Adjusted the padding */
+    font-size: 16px; /* Adjusted the font size */
+}
+
+.btn-primary:hover {
+    background-color: violet; /* Set the background color of the primary buttons to dark violet on hover */
+    border-color: violet; /* Set the border color of the primary buttons to dark violet on hover */
+}
+
+#showLoginForm {
+    color: purple; /* Set the color of the "Login Here" link to violet */
+}
+
+#showLoginForm:hover {
+    color: violet; /* Set the color of the "Login Here" link to dark violet on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+    .container {
+        max-width: 90%; /* Adjust the maximum width for smaller screens */
+    }
+
+    /* Adjust width and height of container contents */
+    h2, h1, p {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .btn-primary {
+        padding: 6px 12px; /* Adjusted the padding */
+        font-size: 14px; /* Adjusted the font size */
+    }
+      /* Adjust placeholder text size */
+      input[type="text"]::placeholder, input[type="password"]::placeholder {
+        font-size: 12px; /* Reduce placeholder text size */
+    }
+}
+/* CSS for basic styling, adjust as needed */
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: linear-gradient(to right, rgb(85, 0, 85), rgb(187, 107, 120));
+      }
+      
+      .container {
+        max-width: 900px;
+        margin-top: 50px;
+        backdrop-filter: blur(10px); /* Apply blur effect only to the container */
+        border-radius: 10px; /* Optional: Add rounded corners for a nicer look */
+        padding: 20px; /* Optional: Add padding for better readability */
+        background-color: rgba(255, 255, 255, 0.2); /* Optional: Fallback background color for browsers that don't support backdrop-filter */
+      }
+      
+      .form-container {
+        display: none;
+        /* Remove backdrop-filter and background-color from here */
+      }
+      
+      h2, h1, p {
+        font-weight: bold;
+        color: white;
+      }
+      
+      .btn {
+        background-color: purple; /* Set the background color of the primary buttons to violet */
+        border-color: purple; /* Set the border color of the primary buttons to violet */
+        border-radius: 20px;
+        color: white;
+      }
+      
+      .btn:hover {
+        background-color: violet; /* Set the background color of the primary buttons to dark violet on hover */
+        border-color: violet; /* Set the border color of the primary buttons to dark violet on hover */
+        color: white;
+      }
+      
+      #showLoginForm {
+        color: purple; /* Set the color of the "Login Here" link to violet */
+      }
+      
+      #showLoginForm:hover {
+        color: violet; /* Set the color of the "Login Here" link to dark violet on hover */
+      }
+      
+      .container {
+        max-width: 900px;
+        margin-top: 50px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Adjust font sizes for smaller screens */
+      @media (max-width: 768px) {
+        .container {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 24px; /* Adjust h2 font size for smaller screens */
+        }
+        .btn-primary {
+          font-size: 16px; /* Adjust button font size for smaller screens */
+          padding: 10px 20px; /* Adjust button padding for smaller screens */
+        }
+      }
+      
+      /* Adjust font sizes further for even smaller screens */
+      @media (max-width: 576px) {
+        .container {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 20px; /* Adjust h2 font size for even smaller screens */
+        }
+        .btn-primary {
+          font-size: 14px; /* Adjust button font size for even smaller screens */
+          padding: 8px 16px; /* Adjust button padding for even smaller screens */
+        }
+      }
+      
+      /* Adjust font sizes even further for very small screens */
+      @media (max-width: 400px) {
+        .container {
+          font-size: 10px;
+        }
+        h2 {
+          font-size: 18px; /* Adjust h2 font size for very small screens */
+        }
+        .btn-primary {
+          font-size: 12px; /* Adjust button font size for very small screens */
+          padding: 6px 12px; /* Adjust button padding for very small screens */
+        }
+      }
